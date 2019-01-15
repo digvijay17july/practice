@@ -1,2 +1,38 @@
+ MultiThreading---
+ 
+Java.lang.ThreadGroup class in Java--
+ThreadGroup creates a group of threads. It offers a convenient way to manage groups of threads as a unit.
+This is particularly valuable in situation in which you want to suspend and resume a number of related threads.
+
+The thread group form a tree in which every thread group except the initial thread group has a parent.
+A thread is allowed to access information about its own thread group but not to access information about its thread group’s parent thread group or 
+any other thread group.
+ 
+
+ Constructors:
+ 1. public ThreadGroup(String name): Constructs a new thread group. The parent of this new group is the thread group of the currently running thread.
+ 2. public ThreadGroup(ThreadGroup parent, String name): Creates a new thread group. The parent of this new group is the specified thread group.
+ 
+ Methods--
+ 1. int activeCount(): This method returns the number of threads in the group plus any group for which this thread is parent.
+ 2. int activeGroupCount(): This method returns an estimate of the number of active groups in this thread group.
+ 3. void checkAccess(): Causes the security manager to verify that the invoking thread may access and/ or change the group on which checkAccess() is called.
+ 4. int enumerate(Thread group[]): The thread that comprise the invoking thread group are put into the group array.
+ 5. int enumerate(Thread[] group, boolean recurse): The threads that comprise the invoking thread group are put into the group array. 
+ 6  If all is true, then threads in all subgroups of the thread are also put into group.
+ 7. int enumerate(ThreadGroup[] group): The subgroups of the evoking thread group are put into the group array.
+ 8. int enumerate(ThreadGroup[] group, boolean all): The subgroups of the invoking thread group are put into the group array. 
+    If all is true, then all subgroups of the subgroups(and so on) are also put into group.
+ 9. int getMaxPriority(): Returns the maximum priority setting for the group.
+ 10. String getName(): This method returns the name of the group.
+ 11. ThreadGroup getParent(): Returns null if the invoking ThreadGroup object has no parent. Otherwise, it returns the parent of the invoking object.
+ 12. void interrupt(): Invokes the interrupt() methods of all threads in the group.
+ 13. boolean isDaemon(): Tests if this thread group is a daemon thread group. 
+     A daemon thread group is automatically destroyed when its last thread is stopped or its last thread group is destroyed.
+ 14. boolean isDestroyed(): This method tests if this thread group has been destroyed.
+ 15  void list(): Displays information about the group.
+ 16. void setDaemon(boolean isDaemon): This method changes the daemon status of this thread group.
+     A daemon thread group is automatically destroyed when its last thread is stopped or its last thread group is destroyed.
+ 
  Concurrency ---------
  
