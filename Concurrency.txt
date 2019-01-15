@@ -34,5 +34,44 @@ any other thread group.
  16. void setDaemon(boolean isDaemon): This method changes the daemon status of this thread group.
      A daemon thread group is automatically destroyed when its last thread is stopped or its last thread group is destroyed.
  
+ 
+ Java.lang.ThreadLocal class in Java--
+This class provides thread local variable. These variables differ from their normal counterparts in that each thread that accesses one 
+(via its get or set method) has its own, independently initialized copy of the variable.
+Basically it is an another way to achieve thread safety apart from writing immutable classes.
+Since Object is no more shared there is no requirement of Synchronization which can improve scalability and performance of application.
+It extends class Object.
+ThreadLocal provides thread restriction which is extension of local variable.
+ThreadLocal are visible only in single thread. No two thread can see each others thread local variable.
+These variable are generally private static field in classes and maintain its state inside thread.
+ 
+ Constructor: 
+ThreadLocal(): This creates a thread local variable.
+
+ Methods--
+ 1. Object get(): This method returns the value in the current thread’s copy of this thread-local variable. If the variable has no value for the current thread,
+                 it is first initialized to the value returned by an invocation of the initialValue() method.
+ 2. void set(Object value): This method sets the current thread’s copy of this thread-local variable to the specified value.
+                 Most subclasses will have no need to override this method, relying solely on the initialValue() method to set the values of thread-locals.	
+ 3. void remove(): This method removes the current thread’s value for this thread-local variable. If this thread-local variable is subsequently read by the current thread, its value will be reinitialized by invoking its initialValue() method,
+                unless its value is set by the current thread in the interim. This may result in multiple invocations of the 
+				initialValue method in the current thread.
+ 4. Object initialValue(): This method returns the current thread’s initial value for this thread-local variable.		
+
+ 
+ Object Level Lock in Java vs Class Level Lock in Java
+ 
+ Object level lock is mechanism when we want to synchronize a non-static method or non-static code block such that only one thread will be able to execute the code block on given instance of the class.
+ This should always be done to make instance level data thread safe.
+ 
+  Class level lock in Java
+Class level lock prevents multiple threads to enter in synchronized block in any of all available instances of the class on runtime. 
+This means if in runtime there are 100 instances of DemoClass, 
+then only one thread will be able to execute demoMethod() in any one of instance at a time, and all other instances will be locked for other threads.
+
+Class level locking should always be done to make static data thread safe. As we know that static keyword associate data of methods to class level,
+ so use locking at static fields or methods to make it on class level.
+ 
+ 
  Concurrency ---------
  
