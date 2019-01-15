@@ -1,0 +1,66 @@
+
+
+Semaphore is a simply a variable.
+ This variable is used to solve critical section problem and to achieve process synchronization in the 
+ multi processing environment.
+The two most common kinds of semaphores are counting semaphores and binary semaphores. 
+Counting semaphore can take non-negative integer values and Binary semaphore can take the value 0 & 1. only.
+
+
+
+P(Semaphore s) 
+{ 
+    s = s - 1; 
+    if (s < 0) { 
+  
+        // add process to queue 
+        block(); 
+    } 
+} 
+  
+V(Semaphore s) 
+{ 
+    s = s + 1; 
+    if (s >= 0) { 
+  
+        // remove process p from queue 
+        wakeup(p); 
+    } 
+} 
+
+
+The heap is divided into three sections----------------:
+
+:---Young Generation: Newly created objects start in the Young Generation. 
+     The Young Generation is further subdivided into Eden Memory and two Survivor Memory spaces(s0,s1).Eden is the space where all new objects start, and two Survivor spaces, where objects are moved from Eden after surviving one garbage collection cycle.
+     When objects are garbage collected from the Young Generation, it is a minor garbage collection event.
+:---Old Generation: Objects that are long-lived are eventually moved from the Young Generation to the Old Generation. 
+     When objects are garbage collected from the Old Generation, it is a major garbage collection event.
+:---Permanent Generation: Metadata such as classes and methods are stored in the Permanent Generation. Classes that are no longer in use may be garbage collected from the Permanent Generation.
+
+Four garbage collectors--------------------------------:
+
+:---Serial: All garbage collection events are conducted serially in one thread. Compaction is executed after each garbage collection.
+:---Parallel: Multiple threads are used for minor garbage collection. A single thread is used for major garbage collection and Old Generation compaction. 
+     Alternatively, the Parallel Old variant uses multiple threads for major garbage collection and Old Generation compaction.
+:---CMS (Concurrent Mark Sweep): Multiple threads are used for minor garbage collection using the same algorithm as Parallel. 
+     Major garbage collection is multi-threaded, like Parallel Old, but CMS runs concurrently alongside application processes to minimize “stop the world” events (i.e. when the garbage collector running stops the application). 
+	 No compaction is performed.
+:---G1 (Garbage First): The newest garbage collector is intended as a replacement for CMS. 
+     It is parallel and concurrent like CMS, but it works quite differently under the hood compared to the older garbage collectors.
+
+
+
+
+JAVA.UTIL.CONCURENT.ATOMIC---
+
+
+Equals and hashcde concept--
+
+if hashcode is same than its not mandatory that object is equal.
+if object is equal than hashcode should be same.
+
+
+HashMap------------------------------------
+
+HashMap handles collision by using linked list to store map entries ended up in same array location or bucket location.

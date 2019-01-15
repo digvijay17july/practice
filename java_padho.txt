@@ -1,0 +1,78 @@
+Generate JAVA DOCUMENTATION command 
+-- javadoc -sourcepath ./src -d ./docs -subpackages .
+
+Java--
+
+Enumerations serve the purpose of representing a group of named constants in a programming language.
+For example the 4 suits in a deck of playing cards may be 4 enumerators named Club, Diamond, Heart, and Spade, belonging to an enumerated type named Suit.
+
+
+ENUM------
+Enumerations serve the purpose of representing a group of named constants in a programming language.
+For example the 4 suits in a deck of playing cards may be 4 enumerators named Club, Diamond, Heart, and Spade, belonging to an enumerated type named Suit
+the constructor cannot be the public or protected it must have private or default modifiers.
+
+ -------------JAVA 6------------------------------------                                               
+Scripting Language Support                              |  
+JDBC 4.0 API											|
+Java Compiler API										|
+Pluggable Annotations									|
+Native PKI, Java GSS, Kerberos and LDAP Support			|
+Integrated Web Services									|
+Lot more enhancements									|
+
+
+-------------JAVA 7-------------------------------------
+
+Strings in Switch Statement
+Type Inference for Generic Instance Creation
+Multiple Exception Handling
+Support for Dynamic Languages
+Try with Resources
+Java nio Package
+Binary Literals, Underscore in literals
+Diamond Syntax
+Automatic Null Handling
+
+-------------JAVA 8-------------------------------------
+Lambda expressions,
+Method references,
+Functional interfaces,
+Stream API,
+Default methods,
+Base64 Encode Decode,
+Static methods in interface,
+Optional class,
+Collectors class,
+ForEach() method,
+Parallel array sorting,
+Nashorn JavaScript Engine,
+Parallel Array Sorting,
+Type and Repating Annotations,
+IO Enhancements,
+Concurrency Enhancements,
+JDBC Enhancements etc.
+
+-------------JAVA 9-------------------------------------
+
+Platform Module System (Project Jigsaw)
+Interface Private Methods
+Try-With Resources
+Anonymous Classes
+@SafeVarargs Annotation
+Collection Factory Methods
+Process API Improvement
+New Version-String Scheme
+JShell: The Java Shell (REPL)
+Process API Improvement
+Control Panel
+Stream API Improvement
+Installer Enhancement for Microsoft windows and many more
+
+
+jstat--------
+We can use jstat command line tool to monitor the JVM memory and garbage collection activities. 
+It ships with standard JDK, so you don’t need to do anything else to get it.
+
+For executing jstat you need to know the process id of the application, you can get it easily using ps -eaf | grep java command.
+jstat -gc 9582 1000
