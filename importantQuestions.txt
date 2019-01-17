@@ -1,0 +1,2 @@
+how you can break singleton?
+how can you stop clonning?
