@@ -1,0 +1,70 @@
+internal working of set
+nosql over sql
+debug maven pom script
+Rest Service
+Rest Service vs SOAP Service
+microservices architecture and difference b/w microservices and monolithic services
+
+---What’s the difference between a ClassNotFoundException and NoClassDefFoundError?
+(Question provided by Matt Goldpink)
+
+A ClassNotFoundException means the class file for a requested class is not on the classpath of the application. A NoClassDefFoundErrormeans that the class file existed at runtime, but for some reason the class could not be turned into a Class definition. A common cause is an exception being thrown in static initialization blocks.
+
+
+--Why isn’t String‘s .length() accurate?
+(Question provided by Francis Galiegue)
+
+It isn’t accurate because it will only account for the number of characters within the String. In other words, it will fail to account for code points outside of what is called the BMP (Basic Multilingual Plane), that is, code points with a value of U+10000 or greater.
+
+The reason is historical: when Java was first defined, one of its goal was to treat all text as Unicode; but at this time, Unicode did not define code points outside of the BMP. By the time Unicode defined such code points, it was too late for char to be changed.
+
+This means that code points outside the BMP are represented with two chars in Java, in what is called a surrogate pair. Technically, a char in Java is a UTF-16 code unit.
+
+The correct way to count the real numbers of characters within a String, i.e. the number of code points, is either:
+
+someString.codePointCount(0, someString.length())
+or, with Java 8:
+
+someString.codePoints().count()
+
+-- OOPs Concepts in real world
+
+Example- Laptop 
+
+Encapsulation- Binding of different parts like battery, screen , keyboard etc hiding data
+
+Abstraction- Hiding the complexity how the laptop is working.
+
+Inheritance- Laptop have keyboard screen and cursor may be some other inheriting laptop may have better speakers and graphic card
+
+polymorphism- laptop switch off button works as off button and when laptop is off it works as switch on button , button works differently in  different conditions.
+
+
+----JVM Architecture--
+
+after Loading class file .. jvm creates object for loaded class in heap memory of type java.lang.Class
+Memory areas in JVM --
+
+there are 5 memory areas in jvm-
+  --Method Area
+  --Heap Area
+  --Stack Area
+  --PC Register
+  --Native Method Stack
+  
+  
+The serialization at runtime associates with each serializable class a version number, called a serialVersionUID, which is used during deserialization to verify that the sender and receiver of a serialized object have loaded classes for that object that are compatible with respect to serialization.
+
+Why so we use SerialVersionUID : SerialVersionUID is used to ensure that during deserialization the same class (that was used during serialize process) is loaded.
+
+
+
+Example: Suppose a person who is in UK and another person who is in India, both are going to perform serialization and deserialization respectively. In this case to authenticate that the receiver who is in India is the authenticated person, JVM creates an Unique ID which is known as SerialVersionUID.
+
+In most of the cases, serialization and deserialization both activities are done by a single person with the same system and same location. But in serialization, sender and receiver are not the same person i.e. the persons may be different, machine or system may be different and location must be different then SerialVersionUID comes in the picture. In serialization, both sender and receiver should have .class file at the time of beginning only i.e. the person who is going to do serialization and the person who is ready for deserialization should contain same .class file at the beginning time only.
+
+Serialization : At the time of serialization, with every object sender side JVM will save a Unique Identifier. JVM is responsible to generate that unique ID based on the corresponding .class file which is present in the sender system.
+
+Deserialization: At the time of deserialization, receiver side JVM will compare the unique ID associated with the Object with local class Unique ID i.e. JVM will also create a Unique ID based on the corresponding .class file which is present in the receiver system. If both unique ID matched then only deserialization will be performed. Otherwise we will get Runtime Exception saying InvalidClassException. This unique Identifier is nothing but SerialVersionUID.
+
+

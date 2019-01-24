@@ -1,0 +1,23 @@
+Spring ---
+
+Developer: Rod Johnson
+
+Org: Spring/ pivotal
+
+initial name: interface 21
+
+
+--Spring is light weight as it don't uses the application server like ejb , instead it uses jdk and spring jars
+--Spring is loosely coupled .. by using has a Relationship and Runtime polymorphism
+-- spring promotes has a relation than inheritance 
+-- 2 types of ioc container(Core and J2EE)
+-- 1 more container type is there in spring mvc which is web container
+
+
+	IOC----
+		Core-> BeanFactory(I)
+		J2EE-> ApplicationContext(I)
+	MVC--
+		 MVC-> WebApplicationContext(I)
+		 
+		**Container is responsible for reading xml files , creation of beans and also manage lifecycle of beans , pass dynamic inputs from xml files(Dependency Injection)

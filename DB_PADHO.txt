@@ -1,0 +1,37 @@
+What Makes a Scalable Database?
+Database scalability is a concept in analytics database design that emphasizes the capability of a database to handle growth in the amount of data and users. In the modern applications sphere, two types of workloads have emerged – namely analytical and transactional workloads. Planning for workload growth must take into account the operating system, database design and hardware design decisions.
+
+The Traditional Approach: Denormalization
+At the hardware level, vertical and horizontal scalability exist. Vertical scaling involves increasing the capacity of a single machine. The capacity of a single machine can be increased by adding more CPU cores, RAM and storage. Horizontal scaling involves adding more machines to cope with growing workloads. This article will only highlight database design decisions required for a scalable application.
+
+At the database level configuration, schema design, indexing, and query design affect the capability of a database to scale. Each relational database system provides a set of parameters that can be tweaked to improve performance. Therefore it is advisable to check parameters that are used in the specific database system. Schema design offers the biggest opportunity for a system developer to make decisions that will affect the scalability and performance of a database. Transaction workloads require a normalized design while analytical workloads require a denormalized design. Each design will be briefly explained.
+
+
+ElastiCube: Improving Performance via In-Chip Optimization
+
+The approach outlined above, while scalable, often means sacrificing a great deal of the granularity of the original data on account of the need to denormalize and index said data in advance. This also limits the ability of the typically less-technical, front-end users of analytical applications to perform ad-hoc analysis – as they can only access certain views or queries according to a predefined schema.
+
+The ElastiCube present an alternative form of analytical repository designed for fast query retrieval and scale. It’s based on the notion that by employing In-Chip™ technology to maximize the capabilities of modern hardware, business intelligence tools can achieve optimal performance when processing analytical queries, even without sacrificing the granularity of the data or flexibility of the front-end analysis – since faster query retrieval eliminates the need for summary tables, indexes or denormalization.
+
+
+--------denormalisation---------
+Denormalization is a database optimization technique in which we add redundant data to one or more tables. This can help us avoid costly joins in a relational database. Note that denormalization does not mean not doing normalization. It is an optimization technique that is applied after doing normalization.
+
+In a traditional normalized database, we store data in separate logical tables and attempt to minimize redundant data. We may strive to have only one copy of each piece of data in database.
+For example, in a normalized database, we might have a Courses table and a Teachers table.Each entry in Courses would store the teacherID for a Course but not the teacherName. When we need to retrieve a list of all Courses with the Teacher name, we would do a join between these two tables.
+In some ways, this is great; if a teacher changes is or her name, we only have to update the name in one place.
+The drawback is that if tables are large, we may spend an unnecessarily long time doing joins on tables.
+Denormalization, then, strikes a different compromise. Under denormalization, we decide that we’re okay with some redundancy and some extra effort to update the database in order to get the efficiency advantages of fewer joins.
+
+Pros of Denormalization:-
+
+Retrieving data is faster since we do fewer joins
+Queries to retrieve can be simpler(and therefore less likely to have bugs),
+since we need to look at fewer tables.
+Cons of Denormalization:-
+
+Updates and inserts are more expensive.
+Denormalization can make update and insert code harder to write.
+Data may be inconsistent . Which is the “correct” value for a piece of data?
+Data redundancy necessities more storage.
+In a system that demands scalability, like that of any major tech companies, we almost always use elements of both normalized and denormalized databases.

@@ -1,0 +1,11 @@
+Maven command for debug--
+
+mvnDebug vertx:runMod
+Preparing to Execute Maven in Debug Mode
+Listening for transport dt_socket at address: 8000
+
+Tomcat command to run in debug mode-
+
+JPDA_OPTS="-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
+
+catalina.sh jpda start

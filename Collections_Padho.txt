@@ -1,0 +1,11 @@
+Collections-
+
+Arrays vs Collection-
+
+Arrays are used when data size is fixed.
+Only homogeneous
+collections cannot store primitives
+
+
+HashTable internally uses Dictionary 
+Hashmap iternally uses entryset

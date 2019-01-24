@@ -1,0 +1,39 @@
+hibernate over Ejb 
+---in Ejbs  session beans are  required to contact to ejb to access data
+--- ejbs require application server to maintain ejbs so more cost would be required
+--- hibernate and ejb both are designed by galvingking
+--- ejbs and session beans we need wrap and deploy in the form of ear.
+--- hiberante only requires jvm and jre
+
+hibernate provides features like-
+
+--validation supports by using annotation(as java recommended(JSR303))
+--auto ddl(tables automatically created in db)
+--cache support
+--hibernate is exception free , only runtime exception , no compile time exception
+--hibernate is orm but jdbc is table/relation mapping
+-- HQL(Database independent query)
+--primary key generator support
+--ORM Support(Relational database)
+--OGM Support(NON SQL Support from hibernate 4)(Object graph mapping)
+--Hibernate Search(index based hibernate 4)
+--connection pool implementation
+
+
+Hibernate Object types--
+
+3 types of object--
+  --transient-> create object but not attached to hibernate
+  --persisted-> create object and attached to hibernate
+  --detached -> from hibernate if you remove it after making data permanent
+  
+Things required to use hibernate --
+Pojo 
+Mapping file
+Configuration file
+Test Class
+
+--POJO Rule
+  --Default constructor should be there
+  --public setter and getters
+  
