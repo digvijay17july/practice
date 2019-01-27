@@ -4,6 +4,8 @@ debug maven pom script
 Rest Service
 Rest Service vs SOAP Service
 microservices architecture and difference b/w microservices and monolithic services
+Http explain
+RDBMS
 
 ---What’s the difference between a ClassNotFoundException and NoClassDefFoundError?
 (Question provided by Matt Goldpink)
@@ -53,6 +55,7 @@ there are 5 memory areas in jvm-
   --Native Method Stack
   
   
+-------
 The serialization at runtime associates with each serializable class a version number, called a serialVersionUID, which is used during deserialization to verify that the sender and receiver of a serialized object have loaded classes for that object that are compatible with respect to serialization.
 
 Why so we use SerialVersionUID : SerialVersionUID is used to ensure that during deserialization the same class (that was used during serialize process) is loaded.
@@ -67,4 +70,10 @@ Serialization : At the time of serialization, with every object sender side JVM 
 
 Deserialization: At the time of deserialization, receiver side JVM will compare the unique ID associated with the Object with local class Unique ID i.e. JVM will also create a Unique ID based on the corresponding .class file which is present in the receiver system. If both unique ID matched then only deserialization will be performed. Otherwise we will get Runtime Exception saying InvalidClassException. This unique Identifier is nothing but SerialVersionUID.
 
+----
 
+Break Singleton--
+
+1. Reflection --
+2. Clonning- implement cloneable and throw clonenot supported exception
+3. Serialization -- override protectted method readResolve and return the current instance

@@ -1,3 +1,12 @@
+Normalization is a process of organizing the data in database to avoid data redundancy, insertion anomaly, update anomaly & deletion anomaly. Let’s discuss about anomalies first then we will discuss normal forms with examples.
+
+Update anomaly: In the above table we have two rows for employee Rick as he belongs to two departments of the company. If we want to update the address of Rick then we have to update the same in two rows or the data will become inconsistent. If somehow, the correct address gets updated in one department but not in other then as per the database, Rick would be having two different addresses, which is not correct and would lead to inconsistent data.
+
+Insert anomaly: Suppose a new employee joins the company, who is under training and currently not assigned to any department then we would not be able to insert the data into the table if emp_dept field doesn’t allow nulls.
+
+Delete anomaly: Suppose, if at a point of time the company closes the department D890 then deleting the rows that are having emp_dept as D890 would also delete the information of employee Maggie since she is assigned only to this department.
+
+
 What Makes a Scalable Database?
 Database scalability is a concept in analytics database design that emphasizes the capability of a database to handle growth in the amount of data and users. In the modern applications sphere, two types of workloads have emerged – namely analytical and transactional workloads. Planning for workload growth must take into account the operating system, database design and hardware design decisions.
 

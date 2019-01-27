@@ -1,2 +1,47 @@
-how you can break singleton?
-how can you stop clonning?
+What Is The Difference Between A Static And A Non-static Inner Class?
+
+There are two differences between static inner and non static inner classes.
+
+In case of declaring member fields and methods, non static inner class cannot have static fields and methods. But, in case of static inner class, can have static and non static fields and method.
+
+The instance of non static inner class is created with the reference of object of outer class, in which it has defined, this means it has enclosing instance. But the instance of static inner class is created without the reference of Outer class, which means it does not have enclosing instance.
+
+See this example
+
+class A
+{
+    class B
+    {
+        // static int x; not allowed here
+    }
+
+    static class C
+    {
+        static int x; // allowed here
+    }
+}
+
+class Test
+{
+    public static void main(String… str)
+    {
+        A a = new A();
+
+        // Non-Static Inner Class
+        // Requires enclosing instance
+        A.B obj1 = a.new B(); 
+
+        // Static Inner Class
+        // No need for reference of object to the outer class
+        A.C obj2 = new A.C(); 
+    }
+}
+
+
+Can A Static Block Throw Exception?----------
+Yes, static block can throw only Runtime exception or can use a try-catch block to catch checked exception. Typically scenario will be if JDBC connection is created in static block and it fails then exception can be caught, logged and application can exit.
+
+
+Very important multithreaded environment explanation--
+
+https://javarevisited.blogspot.com/2015/05/top-10-java-multithreading-and.html
