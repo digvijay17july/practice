@@ -45,3 +45,12 @@ Yes, static block can throw only Runtime exception or can use a try-catch block 
 Very important multithreaded environment explanation--
 
 https://javarevisited.blogspot.com/2015/05/top-10-java-multithreading-and.html
+
+
+Producer Consumer Design Pattern-----
+
+https://javarevisited.blogspot.com/2012/02/producer-consumer-design-pattern-with.html
+
+Producer consumer pattern is every where in real life and depict coordination and collaboration. Like one person is preparing food (Producer) while other one is serving food (Consumer), both will use shared table for putting food plates and taking food plates. Producer which is the person preparing food will wait if table is full and Consumer (Person who is serving food) will wait if table is empty. table is a shared object here. On Java library Executor framework itself implement Producer Consumer design pattern be separating responsibility of addition and execution of task.
+
+Read more: https://javarevisited.blogspot.com/2012/02/producer-consumer-design-pattern-with.html#ixzz5dmrCMeyI
