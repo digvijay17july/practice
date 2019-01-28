@@ -1,0 +1,8 @@
+lazy loader lambda
+stateless/statefull lambda
+Rdbms - Group by, cursor , prcedure
+Intern -String,
+LRU cache
+Streams
+sort hashmap on the basis of value
+
