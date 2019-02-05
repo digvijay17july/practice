@@ -1,0 +1,22 @@
+Why lambda expression?
+To enable functional programming in java 
+It is closure or anonymous function.
+
+No modifier
+No return type
+No name 
+Any no. Of arguments
+For one argument parenthesis are not mandatory 
+Not mandatory to write type of arguments
+
+Curly braces are not mandatory 
+
+We can call lambda expression through functional interfaces
+
+
+Functional interfaces----
+Those interfaces which have single abstract method 
+
+Use @FunctionalInterface annotation
+
+For holding lambda expression we need functional interfaces

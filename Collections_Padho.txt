@@ -9,3 +9,7 @@ collections cannot store primitives
 
 HashTable internally uses Dictionary 
 Hashmap iternally uses entryset
+
+
+Java Deque
+The Java Deque interface represents a double ended queue, meaning a data structure where you can insert and remove elements from both ends of the queue. I guess you could have called it a double ended stack too. The deque interface is explained in more detail in the Java Deque tutorial.

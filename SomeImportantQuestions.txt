@@ -6,3 +6,35 @@ LRU cache
 Streams
 sort hashmap on the basis of value
 
+
+Abstract Class vs Interface Class --
+https://examples.javacodegeeks.com/java-basics/java-abstract-class-example/
+
+RealTime Example--
+
+http://javabypatel.blogspot.com/2017/07/real-time-example-of-abstract-class-and-interface-in-java.html
+
+For Interface:
+Interface is used when you don't know anything about implementation but know the contract that implementer should have to accomplish the task.
+For Abstract class:
+Abstract class is used when you know partial implementation, where say out of 5 methods, you know implementation of 3 methods and don't know implemenatation of 2 methods in that case 2 methods will be abstract and you need to rely on implementer as a contract to must provide body of abstract methods to accomplish the task.
+
+----------
+All requests you make have their HTTP status codes. There are a lot of them and they are divided into 5 classes. The first number indicates which of them a code belongs to:
+
+1xx - informational;
+2xx - success;
+3xx - redirection;
+4xx - client error;
+5xx - server error.
+-------------
+HTTP vs Rest--------------
+
+No, REST is the way HTTP should be used.
+
+Today we only use a tiny bit of the HTTP protocol's methods – namely GET and POST. The REST way to do it is to use all of the protocol's methods.
+
+For example, REST dictates the usage of DELETE to erase a document (be it a file, state, etc.) behind a URI, whereas, with HTTP, you would misuse a GET or POST query like ...product/?delete_id=22.
+
+https://restfulapi.net/http-methods/
+
