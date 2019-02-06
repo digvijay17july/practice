@@ -76,3 +76,35 @@ It ships with standard JDK, so you don’t need to do anything else to get it.
 
 For executing jstat you need to know the process id of the application, you can get it easily using ps -eaf | grep java command.
 jstat -gc 9582 1000
+
+
+*****What is required to try with resource?
+
+-----The resource should implement AutoCloseable interface.
+
+*****What is supplier interface?
+-----The Supplier interface signature is as below, which represents a supplier of results.
+
+     @FunctionalInterface
+
+     public interface Supplier
+
+     Here, T is the type of results supplied by this supplier.
+	
+*****What is Consumer?
+-----java.util.function.Consumer is a functional interface. Like Supplier, it has one abstract functional method accept(T t)and a default method andThen(Consumer<? super T> after)
+
+     Note: Default methods are not abstract methods.
+
+     The Consumer interface signature is as below, which represents an operation that accepts a single input argument and returns no result.
+
+     @FunctionalInterface
+
+     public interface Consumer
+ ------
+	 default Consumer < T > andThen(Consumer << ? super T > after) {
+    Objects.requireNonNull(after);
+    return (T t) - > {
+        accept(t);after.accept(t);
+    };
+}
