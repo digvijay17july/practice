@@ -1,0 +1,12 @@
+Framework     Versions        min. compatible JDK Versions    min. JPA Versions
+
+Spring            5             JDK 8								
+Spring            4             JDK 8,7,6
+Spring     
+
+Hibernate ORM	6.0				8									2.2
+Hibernate ORM	5.4				8									2.2
+Hibernate ORM	5.3				8									2.2
+Hibernate ORM	5.2				8									2.1
+Hibernate ORM	5.1				8									2.1
+Hibernate ORM	5.0				6									2.1
