@@ -21,3 +21,10 @@ initial name: interface 21
 		 MVC-> WebApplicationContext(I)
 		 
 		**Container is responsible for reading xml files , creation of beans and also manage lifecycle of beans , pass dynamic inputs from xml files(Dependency Injection)
+
+
+TODO
+Spring pagination:--
+
+
+
