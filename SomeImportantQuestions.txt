@@ -38,3 +38,5 @@ For example, REST dictates the usage of DELETE to erase a document (be it a file
 
 https://restfulapi.net/http-methods/
 
+https://restfulapi.net/
+

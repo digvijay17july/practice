@@ -1,0 +1,77 @@
+Projects 
+
+------
+OnBoarding Portal for IBM UDEPLOY(Agile -- team size 4)
+->  IBM UrbanCode Deploy is a tool for automating application deployments through your environments. It is designed to facilitate rapid feedback and continuous delivery in agile development while providing the audit trails, versioning and approvals needed in production.
+
+-> Migrating jobs from jenkins and teamcity to udeploy
+-> creating custom jobs using portal on udeploy with min. configurations based on templates available in portal 
+
+Project management by maven
+
+Frontend --
+
+JSP with Css3
+
+Middleware --
+Spring MVC  
+for creating model and views
+
+backend --
+ was based on consuming rest services of udeploy using restTemplates available in spring.
+
+
+DevOps transformation In HSBC-
+
+I was part of devOps transformation team--
+
+Creating Pipelines using groovy script called pipeline as script.
+Creating testing framework using junit, Mockito and inmemory DB, and also integrating testing of api's using postman
+Creating plugin for open source project Hygeia dashboard
+
+
+IRIS Workflow-
+
+project management by maven--
+
+A Workflow Management System used by Tom Tom Navigation Systems.
+
+Forntend--
+JSPs and smiple javascript and jquery
+
+middleware--
+Spring --
+
+backend 
+JPA
+POstgres
+
+
+Product as Health Care Product as minerva--
+NorthWell Health
+NYU Langone Medical centre
+Hackensack umc
+Quest Diagnostics
+
+
+project management by gradle
+Frontend--
+
+Based on angular 1.3 
+Nginx to for angular app.
+
+Middleware--
+Groovy on Grails which is a framework based on spring 
+Rules management by drools
+
+Backend-- 
+JPA with
+Mongodb
+
+Separate Medication on Spring boot and JPA 
+
+
+
+
+
+

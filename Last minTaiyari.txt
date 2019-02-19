@@ -1,0 +1,9 @@
+DBMS REAL TIME SCENARIO BASED OR DESIGNED BASED
+PROJECTS DIAGRAM AND STRUCTURE
+Http apis
+
+
+caching----
+
+@enable caching 
+@Cacheable in spring provides caching

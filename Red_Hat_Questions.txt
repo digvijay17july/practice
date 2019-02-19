@@ -6,6 +6,11 @@ Rest Service vs SOAP Service
 microservices architecture and difference b/w microservices and monolithic services
 Http explain
 RDBMS
+Dependency injection
+Deep and shallow cloning
+future and futureTask
+@controller vs @service vs @component
+scopes in spring
 
 ---What’s the difference between a ClassNotFoundException and NoClassDefFoundError?
 (Question provided by Matt Goldpink)
@@ -77,3 +82,4 @@ Break Singleton--
 1. Reflection --
 2. Clonning- implement cloneable and throw clonenot supported exception
 3. Serialization -- override protectted method readResolve and return the current instance
+

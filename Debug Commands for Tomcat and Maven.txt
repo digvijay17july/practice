@@ -6,6 +6,11 @@ Listening for transport dt_socket at address: 8000
 
 Tomcat command to run in debug mode-
 
+(Java Platform Debugger Architecture) in file setenv.sh
+
 JPDA_OPTS="-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
 
 catalina.sh jpda start
+
+
+What these settings basically do is to enable remote debugging and configure available options: specifying the communication protocol between the running application and the debugger, (ie transport=dt_socket) the port at which the remote application should debugged (ie address=1403). The server=y setting indicates that this JVM would be the one to be debugged while suspend=n is used to tell the JVM to execute right away and not wait for an attached debugger. If set to “y” then the application would be suspended and not run until a debugger is attached.
