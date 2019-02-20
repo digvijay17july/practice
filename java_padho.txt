@@ -1,4 +1,4 @@
-Generate JAVA DOCUMENTATION command 
+﻿Generate JAVA DOCUMENTATION command 
 -- javadoc -sourcepath ./src -d ./docs -subpackages .
 
 Java--
@@ -134,3 +134,8 @@ public class LazyCodeExample {
         return number % 3 == 0 ? true : false;
     }
 }
+
+
+----
+
+Faace and adpter pattern java
