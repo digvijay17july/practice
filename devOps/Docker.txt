@@ -1,0 +1,32 @@
+Docker--
+
+It solves the issue like an application working on developers environment and the same application is not working on the testing environment.
+Docker is a container management service. The keywords of Docker are develop, ship and run anywhere. The whole idea of Docker is for developers to easily develop applications, ship them into containers which can then be deployed anywhere.
+
+
+Using docker file you can create docker image and using docker images you can create containers
+these docker images can be stored in docker hub or local repo.
+
+          Virtualisation        vs           containerisation
+In vm virtual memory is fixed            In containers memory is used as per requirement
+And does not change as per appln. 
+
+-------------------------------
+Docker has client-server architecture 
+The daemon server receives the commands from the docker client through cli or Rest APi's.
+Docker client and the daemon can be present on the same host or different machine.
+
+================
+Docker Files  ||
+Docker Images ||
+Docker conta- ||
+       iners  ||
+Docker regist-||
+       ry/hub ||
+================	   
+
+================
+Docker Clinet ||
+Docker Server ||
+Docker Engine ||
+================
