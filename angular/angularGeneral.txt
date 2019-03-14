@@ -13,5 +13,6 @@ Framework  is anything working on top of language which provides built in  proje
 Goals Of Angular Framework :
 
 	-Separation of DOM manipulation from application logic
-	
+	ex- you don't use the dom to manipulate like document.write
+	- Unit testing as code is independent od DOM
 
