@@ -1,0 +1,17 @@
+Angular basics--------
+	-Client side framework to create web applications.
+	- Angular is a framework which provides the following functionality in the browser:
+	  1. Able to manage UI in the browser.
+	  2. Able to store temporary values in the browser.
+	  3. Able to manage updates on the page.
+	  4. Able to send requests to server and get reponse from server
+	  
+	  
+Framework  is anything working on top of language which provides built in  project model.
+
+
+Goals Of Angular Framework :
+
+	-Separation of DOM manipulation from application logic
+	
+
