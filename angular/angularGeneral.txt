@@ -12,7 +12,18 @@ Framework  is anything working on top of language which provides built in  proje
 
 Goals Of Angular Framework :
 
-	-Separation of DOM manipulation from application logic
+1.Separation of DOM manipulation from application logic
 	ex- you don't use the dom to manipulate like document.write
 	- Unit testing as code is independent od DOM
-
+	- 100% client side framework
+	- Angular is mainly use for web- application
+	- client side code executes on server 
+	- Angular also can be used for development of mobile apps in combination wih React Native / Iconic etc.
+	- Angular is based on TypeScript Language
+	- Angular By default providing DO manipulation code(internally).
+	--Advantages :-
+	     --code is less
+		 --You can perfom "unit testing" based on you application logic
+		
+2.Separtion of HTML Logic from application logic.
+ 
