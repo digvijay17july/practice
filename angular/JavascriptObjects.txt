@@ -1,0 +1,37 @@
+
+JAVASCRIPT OBJECTS - BASICS
+
+object : Real World Item(Entity)
+
+		Object has its properties (details) and (methods  or functions) functionality
+		
+		properties : Details about object
+		methods    : operations of object
+
+Car : 
+  carModel :  Honda City
+  carColor : Red
+  carNo.   : Ts1234
+  start()
+  changeGear()
+  stop()
+  
+ -No classes  in Javascript 5
+ - Javascript 6 (Ecmascript 6)
+ 
+ -Object can be created independently (without class in javascript 5)
+ 
+ 
+ 1. Object Literal 
+   {property:value...
+   method:function()}
+   
+ 2. constructor function 
+	It is a function that receives and "empty object". adds properties and methods to that object .so they will be full of methods 
+	and properties.
+	use "constructor function".if you want to create an object based on a specific/list of fields
+	function constructorFunction()
+	{
+	this.value=value;
+	}
+	console.log(new constructorFunction());

@@ -1,0 +1,10 @@
+TypeScript----
+	-TypeScript is a new programming language, which is developed based on javascript
+	-TypeScript is superset of javascript
+	
+	Benifits of TypeScript :
+		-class based on OOP
+		-Data types  : Type Safety
+		-interfafces :
+	
+	TypeScript can't execute directly must be converted into "javascript"

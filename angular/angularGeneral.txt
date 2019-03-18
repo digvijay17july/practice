@@ -27,3 +27,35 @@ Goals Of Angular Framework :
 		
 2.Separtion of HTML Logic from application logic.
  
+
+ --------------------------------------------------------------------------------
+ Angular versions:
+ 
+ Angular 2.0 : Sept 14th jan 2016
+					@angular/core   : 2.7
+					@angular/common : 2.7
+					...
+					@agular/router  : 3.3.0
+ Angular 3.0 : [Skipped]  : Due to misalignment of router package package 3.3.0
+					@angular/core   : 3.0.0
+					@angular/common : 3.0.0
+					...
+					@agular/router  : ???
+				
+ Angular 4.0 : Mar 23rd 2017
+ 
+ Angular 5.0 : Nov 1st 2017
+ 
+ Angular 6.0 : May 4th 2018
+ 
+ ------------------------------------------------------------------
+ 1. AngularJS is based on javascript
+	Angular is based on TypeScript 
+ 2. AngularJS has perfomance drwabacks. The digest loop of angularjs will be repeated upto 10 times.
+    Angular has no perfomance drawbacks
+ 3. AngularJS has scope, services, directives , factories , filtes	 etc
+    Angular has service , directives, pipes etc
+ 4. AngularJS is mainly based on MVC Architecture
+    Angular is not based on MVC . It is based on components 
+	components= Model + Controller
+	
