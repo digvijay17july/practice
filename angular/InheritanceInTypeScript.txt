@@ -1,0 +1,4 @@
+Inheritance ---
+creating parent child relation---
+One parent can have no. of childs 
+One child can have only one parent

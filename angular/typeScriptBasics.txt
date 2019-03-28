@@ -1,0 +1,25 @@
+TypeScript Basics :
+
+class className{
+varaibleName : type;
+varaibleName1 : type2;
+}
+
+datatypes --:
+
+string, number
+
+create object:--
+
+var s: ClasssName =new ClassName(11,"abc",22);
+
+Constructor:
+	- Special type of method in the class
+	- Mainly meant for initialization of properties of class
+	- It can also maintain any initialization logic
+	
+	syntax-
+		constructor(parameter1:datatype,...)
+		{
+		}
+		
