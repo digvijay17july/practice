@@ -1,0 +1,9 @@
+// Using  variable in Go
+
+var  name="BRAD"
+
+var age =32 or var age int32 =32
+
+// %T is used to get type of variable 
+
+fmt.Println(name,age)
