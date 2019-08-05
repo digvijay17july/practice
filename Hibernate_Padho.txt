@@ -4,7 +4,7 @@ hibernate over Ejb
 --- hibernate and ejb both are designed by galvingking
 --- ejbs and session beans we need wrap and deploy in the form of ear.
 --- hiberante only requires jvm and jre
-
+-
 hibernate provides features like-
 
 --validation supports by using annotation(as java recommended(JSR303))
@@ -37,3 +37,19 @@ Test Class
   --Default constructor should be there
   --public setter and getters
   
+  
+ ---> What is the difference between get and load in Hibernate?
+get vs load is one of the most frequently asked Hibernate Interview question,
+ since correct understanding of both get() and load() is require to effectively using Hibernate. Main difference between get and load is that, get will hit 
+ the database if object is not found in the cache and returned completely initialized object, which may involve several database call while load() method can return proxy,
+ if object is not found in cache and only hit database if any method other than getId() is called. This can save a lot of performance in some cases. You can also see a
+ difference between get and load in Hibernate for more differences and detailed discussion on this question.
+
+
+What is the difference between save, persist and saveOrUpdate methods in Hibernate?
+After get vs load, this is another Hibernate Interview question which appears quite often. All three methods i.e. save(), saveOrUpdate() and persist() 
+is used to save objects into database, but has subtle differences e.g. save() can only INSERT records but saveOrUpdate() can either INSERT or UPDATE records.
+ Also, the return type of save() is a Serializable object, while return type of persist() method is void. You can also check save vs persist vs saveOrUpdate for complete differences between them in hibernate.
+
+
+Read more: https://javarevisited.blogspot.com/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html#ixzz5snT6YVlC

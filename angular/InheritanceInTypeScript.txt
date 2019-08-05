@@ -2,3 +2,14 @@ Inheritance ---
 creating parent child relation---
 One parent can have no. of childs 
 One child can have only one parent
+
+class childClassName extends PaentClassName
+{
+/*
+By default all methods of parent class.
+*/
+}
+
+
+parent class consttructor is not available to child by default
+can be done using super(arguments.. )

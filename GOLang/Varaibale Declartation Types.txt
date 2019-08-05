@@ -7,3 +7,37 @@ var age =32 or var age int32 =32
 // %T is used to get type of variable 
 
 fmt.Println(name,age)
+
+
+//Using a short hand method 
+
+name:="DJ"  // can be done inside a function only;
+
+name, email:= "dj", "dj@gmail.com" //multiple assignment
+
+
+//import packages
+
+import (
+"fmt"
+"math"
+)
+
+//Arrays
+
+var fruitArr [2]string {"Apple","Orange"}
+
+frutArr := [2]string {}
+
+
+// func for structs
+
+type person struct{}
+
+func (p person) greet() string{ return "hello"}
+
+func main()
+{
+var p person
+p.greet()
+}
