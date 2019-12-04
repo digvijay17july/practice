@@ -1,0 +1,80 @@
+## OCP 4.1-
+
+# Platform supported - AWS , VMware, bareMetal, RHEL , RHCOS
+
+# OCP has two types of nodes- 
+
+Worker
+Master
+
+# Nodes are instances of RHEL and RHCOS
+
+Orchestrated by Master
+
+# Node daemon and Other software runs on all nodes
+
+
+
+# Service Layer
+
+Defines logical set of pods and policy for accessing them
+As pods are created and destroyed by scaling up and down, permanent IP or hostname must be available for other applications to connect to
+Service represents group of pods and provides permanent internal IP and hostname for other applications to use
+Service layer connects application components together
+Front-end web service connects to database instance by communicating with database service 
+Services allow simple internal load balancing across application components
+OpenShift automatically injects service information into running containers for ease of discovery
+
+
+Labels
+Used to organize, group, or select API objects
+Example: Pods tagged with labels, services use label selectors to identify pods they proxy to 
+Makes it possible for services to reference groups of pods 
+Can even treat pods with potentially different containers as related entities 
+Most objects can include labels in metadata 
+Can group arbitrarily related objects with labels
+Example: All of the pods, services, replication controllers, and deployment configurations of a particular application 
+Labels are simple key-value pairs: labels:
+  key1: value1
+  key2: value2 
+
+
+OpenShift Networking
+Container networking based on integrated Open vSwitch 
+Platform-wide routing tier 
+Ability to plug in third-party software-defined network (SDN) solutions 
+Integrated with DNS and existing routing and load balancing
+
+
+
+!!! What is high Availability??
+==Use Multiple instances for high availability
+
+# Masters
+Masters provide single API that all tooling and systems interact with
+All administration requests goes through this API 
+All API requests SSL-encrypted and authenticated
+Authorisations handled via fine-grained role-based access control (RBAC)
+Masters can be tied into external identity management systems
+Examples: LDAP, Active Directory, OAuth providers like GitHub and Google
+
+
+#ETCD
+
+ Desired and current state held in data store that uses etcd as distributed key-value store
+etcd also holds RBAC rules, application environment information, non-application user data
+
+
+#Remediating Pod Failures
+
+
+
+#Scheduler
+Component responsible for determining pod placement
+Accounts for current memory, CPU, and other environment utilization when placing pods on worker nodes
+For application high availability, spreads pod replicas between worker nodes
+
+
+# OC Commands 
+— To get Running pods (top 15)
+oc get pods --all-namespaces | head -n 15 
