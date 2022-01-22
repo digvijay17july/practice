@@ -1,0 +1,7 @@
+Mining in blockChain
+
+ * Mining involves creating a hash of a block of transactions that cannot be easily forged, 
+ protecting the integrity of the entire blockchain without the need for a central system.
+ 
+ In Detail:-
+  Mining is actually reward for adding the block to chain after consensus of the n/w nodes.

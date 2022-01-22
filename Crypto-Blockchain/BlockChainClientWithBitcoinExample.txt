@@ -1,0 +1,18 @@
+Type of client(node) in Decentralised n/w with Bit Coin Example:-
+
+ Full Node:-
+ * It stores all the data including the block chain, users connected to the n/w.
+ * To store users it uses UTXO set in BITCOIN
+ * Full nodes are different from Miners
+ * Many users running full nodes are businesses such as exchanges or infrastructure providers who rely on full nodes’ other benefits.
+ * Running a full node is the most secure way to access a network
+ * Celo aims to address the lack of economic incentives for operating a full node
+ 
+ Archival Node:-
+ 
+ * Archival nodes take it even further by storing everything included in a full node along with an archive of the historical states of the chain.
+ * Typically run by entities such as block explorers, data analytics companies, and infrastructure providers.
+ 
+ Light Node:-
+ * A light client allows users to sync with a blockchain in a cryptographically secure manner without actually storing the whole blockchain.
+ * Light clients can be used to know the state of an account, check that a transaction was confirmed, or watch for logged events.

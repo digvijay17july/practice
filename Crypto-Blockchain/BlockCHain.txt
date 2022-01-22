@@ -1,0 +1,25 @@
+Blockhain - it was started to stop tampering of data by storing the infoormation inside blocks and then use those blocks to connect them by storing the addresses of next,previous blocks
+
+Benifits:-
+
+* if someone tries to edit the block will fil as it will loose the trailing block or previous block 
+* if someone is trying to change block address then one would have to create these blocks in all decentralised systems.
+
+
+Note:- blockchain is kind of DB which stores the data in form block and uses these blocks to connect each other by storing addresses.
+
+Each block stores address , data in the from of HASH
+Each node in the n/w stores the replica of blockchain, also each node updates itself by connecting to the n/w and using the same ot updat the transactions
+
+
+*   How to become a part of the decentralised sysytem?
+ans.You need to act as a client for the decntralised system.
+	
+	As the blockhain becomes so big and really difficult to store data on small systems (nodes)
+	We need different clients(Nodes) for accessing the block chain:- 
+	
+	1. Full Nodes.
+	2. Archive Nodes.
+	3. Light Clients
+	4. Stateless Clients
+	
