@@ -1,0 +1,7 @@
+D.S Inerview Questions:-
+
+1. Naukri.com
+	- Application of merge sort
+		- Find the kth largest element from a list of integer whch sorted and rotated(note the list contains the repeated numbers)
+2. MMT- Golang Dev.
+	- Sort the rotated array with better time complexity then O(nLogn)

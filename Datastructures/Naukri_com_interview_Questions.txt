@@ -1,0 +1,50 @@
+
+
+
+
+arr={4,5,6,7,1,2,3}
+
+find the kth Largest Number ?
+
+example -> 4th-> 4
+
+it is rotated only  a sigle time ?
+and also the 2 arrays after rotated are sorted and in ascending order
+
+1st {4,5,6,7} 2nd{1,2,3}
+
+i will first consider that the list contains the unique elements
+and then we will try to convert the same program using the repeated values as well
+
+
+
+void main(int args[]){
+
+}
+
+
+static int[] sortRotatedList(int arr[],int size){
+        int mid = 0;
+
+        int[] temp=new int[size];
+        int i=0;
+        for(i=0;i<size-1;i++){
+            if(arr[i]>arr[i+1]){
+                mid=i;
+            }
+        }
+        for(i=mid+1;i<size;i++){
+            temp[i-mid-1]=arr[i];
+        }
+        for(i=0;i<=mid;i++){
+            temp[i+mid]=arr[i];
+        }
+
+ HashSet set=new HashSet(Arrays.asList(temp));
+ 
+       return temp;
+
+
+    }
+	
+arr={4,4,5,6,7,1,2,2,3}

@@ -1,0 +1,173 @@
+public static void main(String[] args)
+    {
+        int num = 789;
+        int reversednum = 0;
+        int remainder;
+  
+        while (num != 0) {
+  
+           
+            remainder = num % 10; // 789%10 = 9  // 
+            reversednum
+                = reversednum * 10  // 0*10+9=9
+                  + remainder;
+            num /= 10;				// num=789/10=78
+        }
+        System.out.println("Reversed number is "
+                           + reversednum);
+    }
+
+
+Input = [2,1,3,2,3,2,4,6,5,5]
+Output = [1,1,2,3,3,2,4,1,5,2,6,1]
+
+sorted input- [1,2,2,2,3,3,4,5,5,6]
+
+List<Integer> frequencyArray(int in[]){
+	
+List<Integer> op=new ArrayList();
+
+	for(int i=0;i<in.length;i++){
+			op.add(in[i]);
+			int count=0;
+			for(int j=i+1 ; j <in.length-1 ;j++){
+				if(in[i]==in[j] ){
+				count+=1;
+				}
+			}
+			op.add(count)
+	}
+	return op;
+}
+
+O(n2)
+
+frequency(int in[]){
+
+Arrays.sort(in);
+HashMap<Integer, Integer> map=new HashMap();
+List<Integer> list=new ArrayList();
+for(int i=0;i<in.length;i++){
+	if(map.containsKey(in[i])){
+		map.put(in[i],map.get(in[i])+1);
+		}else{
+			map.put(in[i],1);
+			}
+	} 
+for(Map.Entry<Integer> entry:map.entrySet()){
+list.add(entry.key());
+list.add(entry.value());
+}
+}
+
+frequency(int in[]){
+Arrays.sort(in);
+List<Integer> list=new ArrayList();
+for(i=0;i<in.length;i++){
+	for(j=i+1;j<length-1;j++){
+		if(in[i]!=in[j]){
+		break;
+		}
+	}
+	list.add(in[i]);
+	list.add(j-i);
+}
+}
+
+element=in[0];
+counter=
+for()
+
+
+ i,j,k:= 0,"name",2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
