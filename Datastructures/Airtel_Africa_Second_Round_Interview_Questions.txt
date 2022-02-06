@@ -1,0 +1,23 @@
+Airtel Africa 2nd round -:
+
+* Implement LRU Cache
+
+
+* Remove Adjacent String 
+	"caaabbbaacdddd";
+
+
+ans-> ""
+
+* Scenario -> imagine you have an environment where you have almost 4-5 microservices.
+			Now, each microservice is having atleast 4-5 instances !
+			imagine a microservice is generating a transaction  (It should be unique)
+			How will you make ensure that the transaction is unique or any transaction generated in
+			the microservice is unique? (transaction generated in one instance should not match with the other transaction).
+			
+			
+
+
+
+ 
+

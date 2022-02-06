@@ -1,0 +1,7 @@
+Big Query- commands
+
+SELECT * from `cloud-training-prod-bucket.arch_infra.billing_data`
+
+SELECT product,resource_type,start_time,end_time,project_id,project_name,cost,currency,currency_conversion_rate from `cloud-training-prod-bucket.arch_infra.billing_data` where (cost>3)
+
+SELECT product,cost, count(*)as sum from `cloud-training-prod-bucket.arch_infra.billing_data` where cost>1 GROUP BY product limit 200

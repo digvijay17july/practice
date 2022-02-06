@@ -1,0 +1,19 @@
+Airtel Xlabs 3rd Round Interview Questions:-
+
+
+* Which database will you use Sql/NoSql for developing app.? What features would you consider for the selection of DB?
+* How can you scale a DB?
+* How can you increase write throuhput in DB?
+* Scenario-> (master worker method in DB)imagine there is a db in which multiple users are using the app, now if a data is written in the master 
+			then it will take some time to sync b/w th worker nodes may be 1 sec or so.
+			Now how will you make sure that the data readed everytime is the latest?
+			
+* Scenario-> Imagine you need to create a BookMyShow app.
+			Now what will be the steps  you follow and what will be the schema for the same.
+			
+* Scenario-> How you will scale an application?
+
+* General Questions like :-
+			What's the motivation for changing the current Job?
+			What motivates you?
+			

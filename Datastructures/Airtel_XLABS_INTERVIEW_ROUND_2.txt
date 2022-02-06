@@ -1,0 +1,19 @@
+Question 1:- 
+
+Print topview of a Binary tree?
+
+Questions 2:-
+
+DBMS-
+
+Scenario 1: Imagine you have to design a bookmyshow website, a single theatre seat is identified by theatreID , ScreenID and seatID.
+		Now if 3-4 customers approach for the same seat then how who will get the seat and how can you notify others if the seat is available or
+		not .? (at dbms level)
+
+Scenario 2: Imagine an employee table with fields(  EmpID, EmpName, DOB (dd-mm-yyyy)) ,
+			Now get the list of employees who are having age greater than 25 and less than 30?
+			
+			
+Scenario 3: Spring vs Spring boot
+			How autconfigurations works in spring boot and how we can disable the autoconfigurations?
+			
