@@ -1,0 +1,27 @@
+Compute Engine API commands:--
+
+
+
+Basic commands to create/delete or list VMS using Compute Engine API-
+Command to get the list of possible commands to be used:-
+gcloud compute - help
+Command to set the project with PROJECT-ID:
+gcloud config set project [PROJECT_ID]
+Let's create VM with the default configs 
+gcloud compute instances create [VM-NAME]
+Get the list of instances
+gcloud compute instances list
+Delete the VM created with the default settings
+gcloud compute instances delete [VM-NAME]
+
+Commands using Filters to create/delete or list VMS using Compute Engine API-
+Command to get the zones and filter the required zone
+gcloud compute zones list - filter="asia"
+Command to create the instance in the specified zone and machine Type
+gcloud compute instances create [VM-NAME] - machine-type=f1-micro - zone=asia-southeast2-c
+Command to get the list of instances with the specified zone
+gcloud compute instances list - filter="asia-southeast2-c"
+Command to get the list of instances with the specified zone and machine type
+gcloud compute instances list - filter="zone ~ asia-southeast2-c AND -machineType:f1-micro"
+Command to delete the VM in the specified Zone
+gcloud compute instances create [VM-NAME] - zone=asia-southeast2-c
