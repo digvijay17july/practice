@@ -1,0 +1,18 @@
+Dell interview Question-
+
+Question -
+
+Create an application POSTCARD-
+
+* An application like twitter, where a person can post using # tags
+* Application will have users, users can follow other users and can be followed by other users
+* Users can rate the posts or give stars to the post
+
+
+Questions on the same-
+
+Create a java spring application name as post card!
+write a functionality where you can filter the #tags may be using regex or java apis
+write test cases for the same!
+
+  

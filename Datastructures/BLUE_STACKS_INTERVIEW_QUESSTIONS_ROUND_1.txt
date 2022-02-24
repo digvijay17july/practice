@@ -1,0 +1,17 @@
+Question one -
+
+Find the max number that can created from the given integer array-
+
+[2,4,55,34,56,1]
+
+Question 2
+
+Find the sum of two arrays -
+
+example:-
+
+array 1-[1,2,3]
+array 2-[0,3,5]
+
+o/p -- [1,5,8]
+
