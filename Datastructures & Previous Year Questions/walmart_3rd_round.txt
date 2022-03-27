@@ -1,0 +1,11 @@
+HLD & LLD for courrier tracking system!
+
+use case:-
+
+* A courrier service should return the unique value.
+* For each courrier there should be a unique id generated
+* There can be billions of unique ids in DB
+
+
+Questions how db ids been tracked and DB can be scaled !
+

@@ -1,0 +1,30 @@
+Amazon Interview Questions
+
+Round 1- 
+
+Online Assessment from hackerank kind of tool
+ * 2 questions - 1 easy and 1 medium at difficulty level
+ 
+
+Round 2- 
+
+LLD :-
+
+* Reservation System for housing society' club house, Questions around DB design and scaling
+* Questions around 14 leadership principles of amazon
+
+Round 3:-
+
+
+HLD :-
+
+* Design architecture diagram or High level design for any previous project!
+* Design Uber backend service for driver's reservation system
+* Questions around 14 leadership principles of amazon
+
+Round 4:-
+
+DSA/Algo
+
+* Count the number of nodes in a complete binary Tree!
+* Questions around 14 leadership principles of amazon
